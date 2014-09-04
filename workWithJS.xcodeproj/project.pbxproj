@@ -19,6 +19,11 @@
 		95341A3D19B8D6F700DA045B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95341A2519B8D6F700DA045B /* UIKit.framework */; };
 		95341A4519B8D6F700DA045B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95341A4319B8D6F700DA045B /* InfoPlist.strings */; };
 		95341A4719B8D6F700DA045B /* workWithJSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95341A4619B8D6F700DA045B /* workWithJSTests.m */; };
+		95341A5119B8D74B00DA045B /* query.js in Sources */ = {isa = PBXBuildFile; fileRef = 95341A5019B8D74B00DA045B /* query.js */; };
+		95341A5319B8D76000DA045B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95341A5219B8D76000DA045B /* JavaScriptCore.framework */; };
+		95341A5419B8D76C00DA045B /* query.js in Resources */ = {isa = PBXBuildFile; fileRef = 95341A5019B8D74B00DA045B /* query.js */; };
+		95341A5719B8D7AB00DA045B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95341A5619B8D7AB00DA045B /* ViewController.m */; };
+		95341A5A19B8DABE00DA045B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95341A5919B8DABE00DA045B /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,12 @@
 		95341A4219B8D6F700DA045B /* workWithJSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "workWithJSTests-Info.plist"; sourceTree = "<group>"; };
 		95341A4419B8D6F700DA045B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		95341A4619B8D6F700DA045B /* workWithJSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = workWithJSTests.m; sourceTree = "<group>"; };
+		95341A5019B8D74B00DA045B /* query.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = query.js; path = ../query.js; sourceTree = "<group>"; };
+		95341A5219B8D76000DA045B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		95341A5519B8D7AB00DA045B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		95341A5619B8D7AB00DA045B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		95341A5819B8DABE00DA045B /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		95341A5919B8DABE00DA045B /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95341A5319B8D76000DA045B /* JavaScriptCore.framework in Frameworks */,
 				95341A2419B8D6F700DA045B /* CoreGraphics.framework in Frameworks */,
 				95341A2619B8D6F700DA045B /* UIKit.framework in Frameworks */,
 				95341A2219B8D6F700DA045B /* Foundation.framework in Frameworks */,
@@ -96,6 +108,7 @@
 		95341A2019B8D6F700DA045B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				95341A5219B8D76000DA045B /* JavaScriptCore.framework */,
 				95341A2119B8D6F700DA045B /* Foundation.framework */,
 				95341A2319B8D6F700DA045B /* CoreGraphics.framework */,
 				95341A2519B8D6F700DA045B /* UIKit.framework */,
@@ -109,7 +122,12 @@
 			children = (
 				95341A3019B8D6F700DA045B /* AppDelegate.h */,
 				95341A3119B8D6F700DA045B /* AppDelegate.m */,
+				95341A5519B8D7AB00DA045B /* ViewController.h */,
+				95341A5619B8D7AB00DA045B /* ViewController.m */,
+				95341A5819B8DABE00DA045B /* SecondViewController.h */,
+				95341A5919B8DABE00DA045B /* SecondViewController.m */,
 				95341A3319B8D6F700DA045B /* Images.xcassets */,
+				95341A5019B8D74B00DA045B /* query.js */,
 				95341A2819B8D6F700DA045B /* Supporting Files */,
 			);
 			path = workWithJS;
@@ -219,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95341A5419B8D76C00DA045B /* query.js in Resources */,
 				95341A2C19B8D6F700DA045B /* InfoPlist.strings in Resources */,
 				95341A3419B8D6F700DA045B /* Images.xcassets in Resources */,
 			);
@@ -239,7 +258,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95341A5A19B8DABE00DA045B /* SecondViewController.m in Sources */,
 				95341A3219B8D6F700DA045B /* AppDelegate.m in Sources */,
+				95341A5119B8D74B00DA045B /* query.js in Sources */,
+				95341A5719B8D7AB00DA045B /* ViewController.m in Sources */,
 				95341A2E19B8D6F700DA045B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

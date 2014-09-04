@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "SecondViewController.h"
 
 @implementation AppDelegate
 
@@ -16,6 +18,22 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    _viewController = [[ViewController alloc] init];
+    _viewController.title = @"First";
+    _secondViewController = [[SecondViewController alloc] init];
+    _secondViewController.title = @"Second";
+    
+    _tabBarController = [[UITabBarController alloc] init];
+    _tabBarController.delegate = self;
+    [_tabBarController setViewControllers:@[_viewController, _secondViewController]];
+    
+    _navigationController = [[UINavigationController alloc] init];
+    _navigationController.viewControllers = [NSArray arrayWithObjects:_tabBarController, nil];
+    [_navigationController setNavigationBarHidden:YES];
+    
+    _window.rootViewController = _navigationController;
+    
     return YES;
 }
 
